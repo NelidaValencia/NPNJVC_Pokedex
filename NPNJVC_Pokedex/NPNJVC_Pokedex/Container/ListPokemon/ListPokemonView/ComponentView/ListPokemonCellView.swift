@@ -22,7 +22,7 @@ class ListPokemonCellView : UITableViewCell{
             let label = UILabel()
             label.textColor = .darkGray
             label.numberOfLines = 1
-            label.font = .systemFont(ofSize: 30, weight: .bold, width: .standard)
+            label.font = .systemFont(ofSize: 25, weight: .bold, width: .standard)
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()

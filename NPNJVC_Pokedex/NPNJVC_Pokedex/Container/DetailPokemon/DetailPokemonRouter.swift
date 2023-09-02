@@ -18,7 +18,7 @@ class DetailPokemonRouter : DetailRouting{
         let presenter = DetailPokemonPresenter(idPokemon: idPokemon, interactor: interactor)
         let view = DetailPokemonView(presenter: presenter)
         presenter.ui = view
-        
+        view.modalPresentationStyle = .fullScreen
         fromView.present(view, animated: true)
     }
 }

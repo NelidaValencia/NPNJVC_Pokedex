@@ -16,12 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        
-        
-        
-        window?.makeKeyAndVisible()
-        let nav = UINavigationController(nibName: "ListPokemonView", bundle: nil)
-        window?.rootViewController = nav
         listPokemonRouter.showListOfPokemon(window: window)
     }
 

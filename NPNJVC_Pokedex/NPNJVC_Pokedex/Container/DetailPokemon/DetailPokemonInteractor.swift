@@ -15,8 +15,6 @@ class DetailPokemonInteractor : DetailPokemonInteractable{
     func getDetailPokemon(withId idPokemon: Int) async -> DetailPokemonEntity {
         let url = URL(string: "\(String.apiDetail)\(idPokemon)/")!
         let (data, _) = try! await URLSession.shared.data(from: url)
-        let jsonDecoder = JSONDecoder()
-        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        return try! jsonDecoder.decode(DetailPokemonEntity.self, from: data)
+        return try! JSONDecoder().decode(DetailPokemonEntity.self, from: data)
     }
 }

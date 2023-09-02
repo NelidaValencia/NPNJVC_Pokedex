@@ -20,5 +20,179 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06C7D23C-C206-42D4-8B95-9814FCE5EB78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "updateUI(viewModel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06C7D23C-C206-42D4-8B95-9814FCE5EB78 - 5834eacee8f34dbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.DetailPokemonView.updateUI(viewModel: NPNJVC_Pokedex.ViewModelDetailPokemon) -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "2428">
+               </Location>
+               <Location
+                  uuid = "06C7D23C-C206-42D4-8B95-9814FCE5EB78 - 5834eacee8f34dbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.DetailPokemonView.updateUI(viewModel: NPNJVC_Pokedex.ViewModelDetailPokemon) -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "2520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77BEF3D7-9B39-4D18-A4AD-D23A076F6B6F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "setUpView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "77BEF3D7-9B39-4D18-A4AD-D23A076F6B6F - 3e72b4bb99574f01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.DetailPokemonView.setUpView() -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "10283">
+               </Location>
+               <Location
+                  uuid = "77BEF3D7-9B39-4D18-A4AD-D23A076F6B6F - 3e72b4bb99574fc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.DetailPokemonView.setUpView() -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "11112">
+               </Location>
+               <Location
+                  uuid = "77BEF3D7-9B39-4D18-A4AD-D23A076F6B6F - 3e72b4bb99574f01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.DetailPokemonView.setUpView() -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/DetailPokemon/DetailPokemonView/DetailPokemonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "10291">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27E4FE41-B3B6-4924-9AFF-46BB35F9994D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPNJVC_Pokedex/Container/ListPokemon/ListPokemonView/ComponentView/Extension+ListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27E4FE41-B3B6-4924-9AFF-46BB35F9994D - 11d2c8a2917592a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.ListPokemonView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/ListPokemon/ListPokemonView/ComponentView/Extension+ListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "27E4FE41-B3B6-4924-9AFF-46BB35F9994D - 11d2c8a291759267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.ListPokemonView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/ListPokemon/ListPokemonView/ComponentView/Extension+ListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "562">
+               </Location>
+               <Location
+                  uuid = "27E4FE41-B3B6-4924-9AFF-46BB35F9994D - 11d2c8a291759244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPNJVC_Pokedex.ListPokemonView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "NPNJVC_Pokedex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slacker/Desktop/PORTAFOLIO/GIT/NPNJVC_Pokedex/NPNJVC_Pokedex/NPNJVC_Pokedex/Container/ListPokemon/ListPokemonView/ComponentView/Extension+ListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "554">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
