@@ -32,6 +32,8 @@
 		9E798CCA2AA15A5200085777 /* DetailPokemonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E798CC92AA15A5200085777 /* DetailPokemonEntity.swift */; };
 		9E798CCF2AA1610400085777 /* ViewModelDetailPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E798CCE2AA1610400085777 /* ViewModelDetailPokemon.swift */; };
 		9E798CD12AA1611300085777 /* MapperDetailPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E798CD02AA1611300085777 /* MapperDetailPokemon.swift */; };
+		9EA3E7732AA3F50400788550 /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3E7722AA3F50400788550 /* Extension+Image.swift */; };
+		9EA3E7762AA4046A00788550 /* UIImageColors in Frameworks */ = {isa = PBXBuildFile; productRef = 9EA3E7752AA4046A00788550 /* UIImageColors */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,7 @@
 		9E798CC92AA15A5200085777 /* DetailPokemonEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemonEntity.swift; sourceTree = "<group>"; };
 		9E798CCE2AA1610400085777 /* ViewModelDetailPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDetailPokemon.swift; sourceTree = "<group>"; };
 		9E798CD02AA1611300085777 /* MapperDetailPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperDetailPokemon.swift; sourceTree = "<group>"; };
+		9EA3E7722AA3F50400788550 /* Extension+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA3E7762AA4046A00788550 /* UIImageColors in Frameworks */,
 				9E660D702AA03850005FF2DC /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				9E660D742AA03E43005FF2DC /* Extension+String.swift */,
+				9EA3E7722AA3F50400788550 /* Extension+Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			name = NPNJVC_Pokedex;
 			packageProductDependencies = (
 				9E660D6F2AA03850005FF2DC /* Kingfisher */,
+				9EA3E7752AA4046A00788550 /* UIImageColors */,
 			);
 			productName = NPNJVC_Pokedex;
 			productReference = 9E660D3E2AA032FC005FF2DC /* NPNJVC_Pokedex.app */;
@@ -292,6 +298,7 @@
 			mainGroup = 9E660D352AA032FC005FF2DC;
 			packageReferences = (
 				9E660D6E2AA03850005FF2DC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9EA3E7742AA4046A00788550 /* XCRemoteSwiftPackageReference "UIImageColors" */,
 			);
 			productRefGroup = 9E660D3F2AA032FC005FF2DC /* Products */;
 			projectDirPath = "";
@@ -325,6 +332,7 @@
 				9E660D862AA042D0005FF2DC /* DetailPokemonRouter.swift in Sources */,
 				9E660D5B2AA03374005FF2DC /* ListPokemonPresenter.swift in Sources */,
 				9E798CCF2AA1610400085777 /* ViewModelDetailPokemon.swift in Sources */,
+				9EA3E7732AA3F50400788550 /* Extension+Image.swift in Sources */,
 				9E660D652AA033D2005FF2DC /* EntityResponsePokemon.swift in Sources */,
 				9E660D5D2AA03383005FF2DC /* ListPokemonRouter.swift in Sources */,
 				9E660D572AA03364005FF2DC /* ListPokemonView.swift in Sources */,
@@ -564,6 +572,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		9EA3E7742AA4046A00788550 /* XCRemoteSwiftPackageReference "UIImageColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jathu/UIImageColors.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -571,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9E660D6E2AA03850005FF2DC /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9EA3E7752AA4046A00788550 /* UIImageColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EA3E7742AA4046A00788550 /* XCRemoteSwiftPackageReference "UIImageColors" */;
+			productName = UIImageColors;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

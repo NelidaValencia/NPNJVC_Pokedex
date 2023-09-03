@@ -10,13 +10,14 @@ import UIKit
 
 extension ListPokemonView : UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.loader.startAnimating()
         let datapokemons = presenter.viewModels
         guard !searchText.isEmpty  else {
             searchActive = false
             filterData = datapokemons;
-            tablePokemon.reloadData()
+            self.tablePokemon.reloadData()
+            self.loader.stopAnimating()
             return
-            
         }
 
         filterData = datapokemons.filter(
@@ -34,10 +35,11 @@ extension ListPokemonView : UISearchBarDelegate{
         }
         
         tablePokemon.reloadData()
+        self.loader.stopAnimating()
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchActive = true
+        searchActive = false
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -49,9 +51,18 @@ extension ListPokemonView : UISearchBarDelegate{
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchActive = false
+        searchActive = true
     }
     
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        searchActive = false
+        return searchActive
+    }
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchActive = true
+        return searchActive
+    }
 }
 
 extension ListPokemonView : UITableViewDelegate{
@@ -77,7 +88,6 @@ extension ListPokemonView : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListPokemonCellView", for: indexPath) as! ListPokemonCellView
-        
         if searchActive {
             let model = filterData[indexPath.row]
             cell.configure(model: model)
@@ -93,7 +103,10 @@ extension ListPokemonView : UITableViewDataSource{
 extension ListPokemonView : listOfPokemonUI{
     func update(pokemons: [ViewModelListPokemon]) {
         DispatchQueue.main.async {
+            self.tablePokemon.isHidden = false
+            self.loader.stopAnimating()
             self.tablePokemon.reloadData()
+            
         }
     }
 }

@@ -41,6 +41,9 @@ class ListPokemonPresenter : listOfPokemonPresentable{
     }
     
     func onTapCell(atIndex: Int) {
+//        let model = models[atIndex]
+//        let idString = ""
+//        let pokemonId = idString.getObtainInt(url: model.url)
         routing.showDetailPokemon(withIdPokemon: atIndex)
     }
     

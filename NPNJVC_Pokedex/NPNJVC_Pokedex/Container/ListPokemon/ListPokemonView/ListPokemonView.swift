@@ -10,7 +10,16 @@ import UIKit
 
 class ListPokemonView: UIViewController {
     
-    let titleImage : UIImageView = {
+    var loader : UIActivityIndicatorView = {
+        let activity = UIActivityIndicatorView()
+        activity.translatesAutoresizingMaskIntoConstraints = false
+        activity.isHidden = true
+        activity.layer.masksToBounds = true
+        activity.style = .whiteLarge
+        return activity
+    }()
+    
+    var titleImage : UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -20,16 +29,18 @@ class ListPokemonView: UIViewController {
     
     var navigationBar : UISearchBar = {
         let navigation = UISearchBar()
-        navigation.contentMode = .scaleAspectFit
         navigation.translatesAutoresizingMaskIntoConstraints = false
-        navigation.barStyle = .default
-        navigation.backgroundColor = .white
+        navigation.searchTextField.font = .systemFont(ofSize: 20, weight: .light, width: .standard)
+        navigation.searchBarStyle = .minimal
+        navigation.contentMode = .center
+        navigation.searchTextField.layer.masksToBounds = true
         return navigation
     }()
     
     var tablePokemon : UITableView = {
         let tableView = UITableView()
-        tableView.separatorColor = .lightGray
+        tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .systemGray4
         tableView.backgroundColor = .white
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.estimatedRowHeight = 60
@@ -56,7 +67,7 @@ class ListPokemonView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        var pokemons = presenter.viewModels
+        let pokemons = presenter.viewModels
         filterData = pokemons
         view.backgroundColor = .white
         setUpTableView()
@@ -68,25 +79,33 @@ class ListPokemonView: UIViewController {
         view.addSubview(tablePokemon)
         view.addSubview(navigationBar)
         view.addSubview(titleImage)
-        
+        view.addSubview(loader)
         NSLayoutConstraint.activate([
+            
+            loader.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loader.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            
             titleImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             titleImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
             titleImage.heightAnchor.constraint(equalToConstant: 100),
             titleImage.widthAnchor.constraint(equalToConstant: 300),
             
             navigationBar.topAnchor.constraint(equalTo: titleImage.bottomAnchor, constant: 20),
-            navigationBar.heightAnchor.constraint(equalToConstant: 50),
+            navigationBar.heightAnchor.constraint(equalToConstant: 80),
             navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor),
             
-            tablePokemon.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tablePokemon.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tablePokemon.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            tablePokemon.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             tablePokemon.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tablePokemon.topAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: 20)
         ])
         
-        navigationBar.placeholder = " Search Pokemon"
-        
+        navigationBar.placeholder = "Search Pokemon"
+        navigationBar.searchTextField.layer.cornerRadius = 30
+        loader.isHidden = false
+        loader.color = .systemGray
+        loader.startAnimating()
+        tablePokemon.isHidden = true
         tablePokemon.dataSource = self
         tablePokemon.delegate = self
         navigationBar.delegate = self
