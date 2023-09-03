@@ -1,6 +1,6 @@
 # NPNJVC_Pokedex
 
-Este proyecto es una aplicacion Pokedex, consume la API creada en [Mockable](https://pokeapi.co/)  y muestra una lista de pokemones de 1ra Generacion mediante un TableView. Se visualizara un componente de busqueda, se podra ingresar el nombre del pokemon en interes y se realizara la filtracion de la data de la tabla, cuándo es seleccionando un pokemon de la celda, se muestra un detalle con más información sobre el pokemon.
+Este proyecto es una aplicacion Pokedex, consume la API creada en [PokeApi](https://pokeapi.co/)  y muestra una lista de pokemones de 1ra Generacion mediante un TableView. Se visualizara un componente de busqueda, se podra ingresar el nombre del pokemon en interes y se realizara la filtracion de la data de la tabla, cuándo es seleccionando un pokemon de la celda, se muestra un detalle con más información sobre el pokemon.
 
 
 ## Requisitos de ejecucion
@@ -24,6 +24,7 @@ Clonar o descargar el repositorio y realizar lo siguiente:
 Arquitectura y librerias que se utilizaron:
 
 - Swift
+- UIKit
 - VIPER
 - KingFisher
 - UIImageColors
@@ -54,5 +55,5 @@ Response para consumir el REST/JSON
 ## Imagenes  
   
 <p align="center">      
- <img width="1400" height="400" alt="challenge" src="https://drive.google.com/uc?export=view&id=15ZGgdFAyj1Lpq7M93vx-6QbG7KI6RJjt"/>
+ <img width="1500" height="300" alt="challenge" src="https://drive.google.com/uc?export=view&id=15ZGgdFAyj1Lpq7M93vx-6QbG7KI6RJjt"/>
  </p>
