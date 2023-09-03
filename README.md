@@ -54,5 +54,5 @@ Response para consumir el REST/JSON
 ## Imagenes  
   
 <p align="center">      
- <img width="230" height="450" alt="challenge" src="https://drive.google.com/uc?export=view&id=15ZGgdFAyj1Lpq7M93vx-6QbG7KI6RJjt"/>
+ <img width="500" height="450" alt="challenge" src="https://drive.google.com/uc?export=view&id=15ZGgdFAyj1Lpq7M93vx-6QbG7KI6RJjt"/>
  </p>
